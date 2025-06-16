@@ -3,6 +3,7 @@ import { Poppins,Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Toaster } from 'react-hot-toast';
 import { Montserrat } from 'next/font/google';
+import Sidebar from "./components/sidebar";
 
 const font=Poppins({
   subsets: ['latin'],
@@ -36,8 +37,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={font.variable} suppressHydrationWarning>
         <head />
-        <body className=" text-black text-[16px] lg:text-[18px] sm:text-[16px] md:text-[16px] bg-gray-200">
+        <body className=" text-black text-[16px] lg:text-[18px] sm:text-[16px] md:text-[16px] bg-gray-200 flex min-h-screen">
+            <Sidebar/>
+            <main className="flex-1 bg-gray-100 p-0 overflow-y-auto">
             {children}
+            </main>
             <Toaster position="top-left" reverseOrder={false} />
         </body>
     </html>

@@ -92,16 +92,20 @@ const Accueil = () => {
               <p>Système de notation par séquences (1-6)</p>
             </div>
             </Link>
+            <Link href={"/evaluations/bulletins"}>
             <div className={cardClass}>
               <FileBarChart className="mx-auto text-teal-600" size={40} />
               <h3 className="font-semibold mt-4">Bulletins</h3>
               <p>Génération automatique avec moyennes et classements</p>
             </div>
+            </Link>
+            <Link href={"/evaluations/absences"}>
             <div className={cardClass}>
               <ClipboardList className="mx-auto text-orange-600" size={40} />
               <h3 className="font-semibold mt-4">Absences</h3>
               <p>Suivi avec justifications</p>
             </div>
+            </Link>
             <div className={cardClass}>
               <FileCheck className="mx-auto text-lime-600" size={40} />
               <h3 className="font-semibold mt-4">Discipline</h3>
