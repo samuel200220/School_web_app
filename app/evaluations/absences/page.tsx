@@ -2,10 +2,13 @@
 
 import Link from 'next/link';
 import { ClipboardPlus, List } from 'lucide-react';
+import Header from '@/app/components/navbar/header';
 
 export default function AbsencesPage() {
   return (
-    <div className="mx-auto h-screen py-12 px-4 bg-blue-600">
+    <div className='w-full h-screen bg-fixed bg-white'>
+      <Header/>
+    <div className="mx-auto w-full h-screen py-12 px-4 bg-blue-600">
       <h1 className="text-3xl font-bold text-center text-gray-800 mb-10">Gestion des Absences</h1>
 
       <div className="grid sm:grid-cols-2 gap-6">
@@ -29,6 +32,7 @@ export default function AbsencesPage() {
           <h3 className="text-lg font-semibold text-black text-center">Liste des absences</h3>
         </Link>
       </div>
+    </div>
     </div>
   );
 }

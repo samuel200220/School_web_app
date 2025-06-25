@@ -9,8 +9,8 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 const menuItems = [
+  // { href: '/', label: 'Accueil', icon: FileText },
   { href: '/dashboard', label: 'Tableau de bord', icon: LayoutDashboard },
-  { href: '/', label: 'Accueil', icon: FileText },
   { href: '/personnel', label: 'Personnel Admin', icon: ShieldCheck },
   { href: '/enseignants', label: 'Enseignants', icon: UserCog },
   { href: '/personnel-entretien', label: 'Entretien', icon: Brush },
@@ -32,7 +32,7 @@ const Sidebar = () => {
 
   return (
     // <aside className="w-64 bg-black/70 backdrop-blur-lg p-6 hidden md:block">
-    <aside className="w-64 bg-blue-900 text-white overflow-y-auto h-screen p-4">
+    <aside className="w-64 bg-blue-400 text-white overflow-y-auto h-screen p-4">
       <h2 className="text-xl font-bold mb-6 text-center">Portail Scolaire</h2>
       <nav className="space-y-2">
         {menuItems.map(({ href, label, icon: Icon }) => (

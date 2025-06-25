@@ -1,5 +1,6 @@
 'use client';
 
+import Header from '@/app/components/navbar/header';
 import React, { useState } from 'react';
 
 const mockNotes = [
@@ -15,7 +16,9 @@ const NotesPage = () => {
   const filteredNotes = mockNotes.filter((note) => note.sequence === sequence);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-rose-50 via-white to-rose-100 p-6">
+    <div className='w-full h-screen bg-white'>
+      <Header/>
+    <div className="min-h-screen w-full bg-gradient-to-br from-rose-50 via-white to-rose-100 p-6">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-3xl font-bold text-gray-800 mb-6">Notes – Séquence {sequence}</h1>
 
@@ -63,6 +66,7 @@ const NotesPage = () => {
           </table>
         </div>
       </div>
+    </div>
     </div>
   );
 };

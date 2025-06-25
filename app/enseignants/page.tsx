@@ -2,13 +2,16 @@
 import React from 'react';
 import { UserCog, PlusCircle, BookOpenCheck, Users2 } from 'lucide-react';
 import Link from 'next/link';
+import Header from '../components/navbar/header';
 
 const cardClass =
   "bg-white/80 text-gray-900 rounded-2xl p-6 shadow-md text-center hover:shadow-xl hover:-translate-y-2 transform transition duration-300";
 
 const Page = () => {
   return (
-    <div className="min-h-screen bg-[url('/teacher.jpg')] bg-fixed bg-cover bg-center text-white">
+    <div className='w-full h-screen bg-fixed bg-white'>
+      <Header/>
+    <div className="min-h-screen w-full bg-[url('/teacher.jpg')] bg-fixed bg-cover bg-center text-white">
       <div className="backdrop-brightness-50 min-h-screen py-16">
         <h1 className="text-4xl font-bold text-center mb-12">Gestion des Enseignants</h1>
 
@@ -38,6 +41,7 @@ const Page = () => {
           </Link>
         </div>
       </div>
+    </div>
     </div>
   );
 };

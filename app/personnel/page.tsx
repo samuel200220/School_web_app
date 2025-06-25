@@ -3,10 +3,13 @@
 import React from 'react';
 import { ShieldCheck } from 'lucide-react';
 import Link from 'next/link';
+import Header from '../components/navbar/header';
 
 const PersonnelPage = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-950 to-sky-900 text-white py-16 px-4">
+    <div className='w-full h-screen bg-fixed bg-white'>
+      <Header/>
+    <div className="min-h-screen w-full bg-gradient-to-br from-blue-950 to-sky-900 text-white py-16 px-4">
       <div className="max-w-5xl mx-auto">
         <div className="flex items-center gap-3 mb-10">
           <ShieldCheck size={32} className="text-blue-400" />
@@ -25,6 +28,7 @@ const PersonnelPage = () => {
           </Link>
         </div>
       </div>
+    </div>
     </div>
   );
 };

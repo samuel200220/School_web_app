@@ -5,11 +5,14 @@ import {
   ClipboardList, FileCheck, PackageSearch
 } from "lucide-react";
 import Link from 'next/link';
+import Header from '../components/navbar/header';
 
 const Accueil = () => {
 
   return (
-    <div className="min-h-screen bg-[url('/eleve1.jpg')] bg-cover bg-center bg-fixed text-white">
+    <div className='w-full h-screen'>
+      <Header/>
+    <div className="min-h-screen w-full bg-[url('/eleve1.jpg')] bg-cover bg-center bg-fixed text-white">
   <div className="backdrop-brightness-50 min-h-screen py-16 px-4">
     <h1 className="text-4xl font-bold mb-6 text-center">Gestion des Élèves</h1>
     <p className="text-lg text-center mb-12 text-white/80">
@@ -56,6 +59,7 @@ const Accueil = () => {
     </div>
   </div>
 </div>
+    </div>
 
   );
 }

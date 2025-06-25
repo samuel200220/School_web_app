@@ -8,8 +8,8 @@ import Header from '../components/navbar/header';
 const Dashboard = () => {
   return (
     <div className='w-full h-screen'>
-      <Header />
-    <div className="min-h-screen w-full bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 p-10 text-gray-800">
+        <Header/>
+        <div className="min-h-screen w-full bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 p-10 text-gray-800">
       <h1 className="text-4xl font-bold mb-10 text-center">Tableau de Bord</h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">

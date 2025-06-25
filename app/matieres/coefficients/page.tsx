@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { BarChartBig } from 'lucide-react';
+import Header from '@/app/components/navbar/header';
 
 interface Coefficient {
   id: number;
@@ -27,7 +28,9 @@ const PageCoefficients = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-900 to-purple-900 text-white py-16 px-4">
+    <div className='w-full h-screen bg-white'>
+      <Header/>
+    <div className="min-h-screen w-full bg-gradient-to-br from-indigo-900 to-purple-900 text-white py-16 px-4">
       <div className="max-w-5xl mx-auto">
         <div className="flex items-center gap-3 mb-10">
           <BarChartBig size={32} className="text-amber-400" />
@@ -71,6 +74,7 @@ const PageCoefficients = () => {
           </table>
         </div>
       </div>
+    </div>
     </div>
   );
 };

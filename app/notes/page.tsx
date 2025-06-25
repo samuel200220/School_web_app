@@ -2,10 +2,13 @@
 import React from 'react';
 import Link from 'next/link';
 import { ScrollText } from 'lucide-react';
+import Header from '../components/navbar/header';
 
 const NotesPage = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-rose-100 via-rose-200 to-rose-300 py-16 px-6">
+    <div className='w-full h-screen bg-white'>
+      <Header/>
+    <div className="min-h-screen w-full bg-gradient-to-br from-rose-100 via-rose-200 to-rose-300 py-16 px-6">
       <div className="max-w-6xl mx-auto bg-white/90 rounded-2xl p-8 shadow-xl">
         <div className="flex items-center space-x-4 mb-8">
           <ScrollText className="text-rose-600" size={40} />
@@ -32,6 +35,7 @@ const NotesPage = () => {
           </Link>
         </div>
       </div>
+    </div>
     </div>
   );
 };

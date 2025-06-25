@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import { ShieldCheck, Eye, Pencil, Trash2 } from 'lucide-react';
 import Link from 'next/link';
+import Header from '@/app/components/navbar/header';
 
 type Personnel = {
   id: number;
@@ -30,7 +31,9 @@ const ListePersonnelPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-sky-950 to-blue-900 text-white px-4 py-16">
+    <div className="w-full h-screen bg-white">
+      <Header/>
+    <div className="min-h-screen w-full bg-gradient-to-br from-sky-950 to-blue-900 text-white px-4 py-16">
       <div className="max-w-6xl mx-auto">
         <div className="flex items-center justify-between mb-8">
           <div className="flex items-center gap-3">
@@ -97,6 +100,7 @@ const ListePersonnelPage = () => {
           </table>
         </div>
       </div>
+    </div>
     </div>
   );
 };

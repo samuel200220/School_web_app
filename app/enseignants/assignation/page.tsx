@@ -25,7 +25,7 @@ const AssignationPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-950 via-blue-900 to-purple-900 py-16 px-4">
+    <div className="min-h-screen w-full bg-gradient-to-br from-indigo-950 via-blue-900 to-purple-900 py-16 px-4">
       <div className="max-w-xl mx-auto bg-white rounded-2xl shadow-xl p-8">
         <div className="flex items-center gap-3 mb-6">
           <ClipboardCheck className="text-indigo-700" size={30} />

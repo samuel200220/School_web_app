@@ -1,4 +1,5 @@
 "use client";
+import Header from '@/app/components/navbar/header';
 import React, { useState } from 'react';
 
 const AjouterNote = () => {
@@ -21,7 +22,9 @@ const AjouterNote = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-rose-50 via-white to-rose-100 py-16 px-4">
+    <div className='w-full h-screen bg-white'>
+      <Header/>
+    <div className="min-h-screen w-full bg-gradient-to-br from-rose-50 via-white to-rose-100 py-16 px-4">
       <div className="max-w-xl mx-auto bg-white rounded-2xl shadow-lg p-8">
         <h2 className="text-2xl font-bold text-rose-600 mb-6 text-center">Ajouter une Note</h2>
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -89,6 +92,7 @@ const AjouterNote = () => {
           </button>
         </form>
       </div>
+    </div>
     </div>
   );
 };

@@ -8,6 +8,7 @@ import {
   SlidersHorizontal
 } from 'lucide-react';
 import Link from 'next/link';
+import Header from '../components/navbar/header';
 
 const MatierePage = () => {
   const cardClass =
@@ -15,7 +16,9 @@ const MatierePage = () => {
   const gridClass = "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6";
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900 py-16 px-4 text-white">
+    <div className="w-full h-screen bg-fixed bg-white">
+      <Header />
+    <div className="min-h-screen w-full bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900 py-16 px-4 text-white">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <BookMarked className="mx-auto text-pink-500" size={50} />
@@ -51,6 +54,7 @@ const MatierePage = () => {
           </Link>
         </div>
       </div>
+    </div>
     </div>
   );
 };

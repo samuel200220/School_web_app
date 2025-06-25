@@ -2,6 +2,7 @@
 
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell, Legend } from 'recharts';
 import React from 'react';
+import Header from '@/app/components/navbar/header';
 
 const notesData = [
   { nom: 'Séquence 1', moyenne: 13.2 },
@@ -23,7 +24,9 @@ const COLORS = ['#8884d8', '#82ca9d', '#ffc658', '#ff8042'];
 
 const StatistiquesPage = () => {
   return (
-    <div className="min-h-screen bg-gray-100 py-12 px-6">
+    <div className='w-full h-screen bg-white'>
+      <Header/>
+    <div className="min-h-screen w-full bg-gray-100 py-12 px-6">
       <h1 className="text-4xl font-bold text-center text-gray-800 mb-12">Statistiques Générales</h1>
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -66,6 +69,7 @@ const StatistiquesPage = () => {
           </ResponsiveContainer>
         </div>
       </div>
+    </div>
     </div>
   );
 };

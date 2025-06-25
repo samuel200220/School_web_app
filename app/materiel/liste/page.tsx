@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import { PackageSearch, Pencil, Trash2 } from 'lucide-react';
+import Header from '@/app/components/navbar/header';
 
 const materielsMock = [
   { id: 1, nom: 'Tableau blanc', type: 'Mobilier', quantite: 3, etat: 'Bon' },
@@ -11,7 +12,9 @@ const materielsMock = [
 
 const ListeMaterielPage = () => {
   return (
-    <div className="min-h-screen bg-[url('/materielimg.jpg')] bg-fixed bg-cover bg-center text-white">
+    <div className='w-full h-screen bg-white'>
+      <Header/>
+    <div className="min-h-screen w-full bg-[url('/materielimg.jpg')] bg-fixed bg-cover bg-center text-white">
       <div className="backdrop-brightness-50 min-h-screen py-16 px-4 flex items-center justify-center">
         <div className="bg-white/90 text-gray-800 rounded-2xl shadow-xl p-8 w-full max-w-6xl">
           <div className="flex items-center gap-3 mb-6">
@@ -59,6 +62,7 @@ const ListeMaterielPage = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

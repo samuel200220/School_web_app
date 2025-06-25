@@ -34,7 +34,7 @@ export default function AjouterAbsence() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-300 via-white to-green-300 flex items-center justify-center p-4">
+    <div className="min-h-screen w-full bg-gradient-to-br from-blue-300 via-white to-green-300 flex items-center justify-center p-4">
       <div className="w-full max-w-3xl bg-white/80 backdrop-blur-sm rounded-xl shadow-lg p-8">
         <h1 className="text-3xl font-bold mb-8 text-center text-gray-800">Ajouter une Absence</h1>
 

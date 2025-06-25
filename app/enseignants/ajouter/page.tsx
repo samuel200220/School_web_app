@@ -31,7 +31,7 @@ const AjouterEnseignant = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900 py-16 px-4">
+    <div className="min-h-screen w-full bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900 py-16 px-4">
       <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-8">
         <div className="flex items-center gap-4 mb-8">
           <UserPlus size={32} className="text-blue-700" />

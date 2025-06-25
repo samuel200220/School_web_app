@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { BookMarked, CheckCircle } from 'lucide-react';
+import Header from '@/app/components/navbar/header';
 
 const AjouterMatiere = () => {
   const [nom, setNom] = useState('');
@@ -18,7 +19,9 @@ const AjouterMatiere = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-900 via-purple-900 to-indigo-900 py-16 px-4 text-white">
+    <div className='w-full h-screen bg-white'>
+      <Header/>
+    <div className="min-h-screen w-full bg-gradient-to-br from-pink-900 via-purple-900 to-indigo-900 py-16 px-4 text-white">
       <div className="max-w-xl mx-auto bg-white/10 backdrop-blur-md rounded-2xl p-8 shadow-xl">
         <div className="flex items-center gap-3 mb-6">
           <BookMarked className="text-pink-400" size={32} />
@@ -66,6 +69,7 @@ const AjouterMatiere = () => {
           )}
         </form>
       </div>
+    </div>
     </div>
   );
 };

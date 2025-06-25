@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { ShieldPlus } from 'lucide-react';
 import { useRouter } from 'next/navigation';
+import Header from '@/app/components/navbar/header';
 
 const AjouterPersonnelPage = () => {
   const router = useRouter();
@@ -25,7 +26,9 @@ const AjouterPersonnelPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-950 to-sky-900 text-white py-16 px-4">
+    <div className='w-full h-screen bg-white'>
+      <Header/>
+    <div className="min-h-screen w-full bg-gradient-to-b from-blue-950 to-sky-900 text-white py-16 px-4">
       <div className="max-w-xl mx-auto bg-white/10 backdrop-blur-md rounded-2xl shadow-lg p-8">
         <div className="flex items-center gap-3 mb-6">
           <ShieldPlus size={28} className="text-blue-400" />
@@ -92,6 +95,7 @@ const AjouterPersonnelPage = () => {
           </button>
         </form>
       </div>
+    </div>
     </div>
   );
 };

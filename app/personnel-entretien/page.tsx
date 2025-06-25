@@ -3,12 +3,15 @@
 import { useRouter } from 'next/navigation';
 import { Brush, PlusCircle, ListOrdered } from 'lucide-react';
 import Link from 'next/link';
+import Header from '../components/navbar/header';
 
 const PersonnelEntretienPage = () => {
   const router = useRouter();
 
   return (
-    <div className="min-h-screen bg-[url('/entretien.jpg')] bg-fixed bg-cover bg-center p-6">
+    <div className='w-full h-screen bg-fixed bg-white'>
+      <Header/>
+    <div className="min-h-screen w-full bg-[url('/entretien.jpg')] bg-fixed bg-cover bg-center p-6">
       <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-md p-8">
         <div className="flex items-center gap-4 mb-6">
           <Brush className="text-yellow-600" size={32} />
@@ -43,6 +46,7 @@ const PersonnelEntretienPage = () => {
           </Link>
         </div>
       </div>
+    </div>
     </div>
   );
 };

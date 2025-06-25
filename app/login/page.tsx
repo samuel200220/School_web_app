@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function LoginPage() {
   return (
-    <div className="min-h-screen w-full flex items-center justify-center bg-gradient-to-r from-purple-600 via-blue-600 to-blue-800 px-4 py-10">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-purple-600 via-blue-600 to-blue-800 px-4 py-10">
       <div className="bg-white rounded-lg shadow-lg flex w-full max-w-4xl overflow-hidden">
         {/* Left (Login Form) */}
         <div className="w-full md:w-1/2 p-8">
